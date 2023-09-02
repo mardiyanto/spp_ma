@@ -136,7 +136,7 @@
 								<option value="<?php echo $j['debit_jenis_id'] ?>" ><?php echo $j['debit_jenis_desc'] ?></option>
 								<?php } ?>				
 								</select>
-							</div>
+							</div></br></br>
 						<div class="col-md-6">
 							<label>Keterangan *</label>
 							<input type="text" required="" name="debit_desc[]" class="form-control" placeholder="Keterangan Penerimaan">
@@ -166,7 +166,7 @@
 		var i = $('#p_scents_debit .row').size() + 1;
 
 		$("#addScnt_debit").click(function() {
-			$('<div class="row"><br>	<div class="col-md-12"><label>Jenis Penerimaan *</label><select required="" name="debit_jenis_jenis_id[]" class="form-control select2" style="width: 100%;"><option selected="selected">Pilih Jenis Penerimaan</option><?php foreach ($debit_jenis as $j){ ?><option value="<?php echo $j['debit_jenis_id'] ?>" ><?php echo $j['debit_jenis_desc'] ?></option><?php } ?></select></div><div class="col-md-6"><label>Keterangan *</label><input type="text" required name="debit_desc[]" class="form-control" placeholder="Keterangan Penerimaan"><br><a href="#" class="btn btn-xs btn-danger remScnt_debit"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Jumlah Rupiah *</label><input type="text" required name="debit_value[]" class="form-control numeric" placeholder="Jumlah" onfocus="unformatRupiah(this)" onblur="formatRupiah(this);"></div></div>').appendTo(scntDiv);
+			$('<div class="row"><br>	<div class="col-md-12"><label>Jenis Penerimaan *</label><select required="" name="debit_jenis_jenis_id[]" class="form-control select2" style="width: 100%;"><option selected="selected">Pilih Jenis Penerimaan</option><?php foreach ($debit_jenis as $j){ ?><option value="<?php echo $j['debit_jenis_id'] ?>" ><?php echo $j['debit_jenis_desc'] ?></option><?php } ?></select></div></br></br><div class="col-md-6"><label>Keterangan *</label><input type="text" required name="debit_desc[]" class="form-control" placeholder="Keterangan Penerimaan"><br><a href="#" class="btn btn-xs btn-danger remScnt_debit"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Jumlah Rupiah *</label><input type="text" required name="debit_value[]" class="form-control numeric" placeholder="Jumlah" onfocus="unformatRupiah(this)" onblur="formatRupiah(this);"></div></div>').appendTo(scntDiv);
 			i++;
 			return false;
 		});

@@ -137,7 +137,7 @@
 								<option value="<?php echo $j['kredit_jenis_id'] ?>" ><?php echo $j['kredit_jenis_desc'] ?></option>
 								<?php } ?>				
 								</select>
-							</div>
+							</div></br></br>
 						<div class="col-md-6">
 							<label>Keterangan *</label>
 							<input type="text" required="" name="kredit_desc[]" class="form-control" placeholder="Keterangan Pengeluaran">
@@ -167,7 +167,7 @@
 		var i = $('#p_scents_kredit .row').size() + 1;
 
 		$("#addScnt_kredit").click(function() {
-			$('<div class="row"><br><div class="col-md-12">	<label>Jenis Pengeluaran *</label><select required="" name="kredit_jenis_jenis_id[]" class="form-control select2" style="width: 100%;"><option selected="selected">Pilih Jenis Pengeluaran</option><?php foreach ($kredit_jenis as $j){ ?><option value="<?php echo $j['kredit_jenis_id'] ?>" ><?php echo $j['kredit_jenis_desc'] ?></option><?php } ?></select></div><div class="col-md-6"><label>Keterangan *</label><input type="text" required name="kredit_desc[]" class="form-control" placeholder="Keterangan Pengeluaran"><br><a href="#" class="btn btn-xs btn-danger remScnt_kredit"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Jumlah Rupiah *</label><input type="text" required name="kredit_value[]" class="form-control" placeholder="Jumlah" onfocus="unformatRupiah(this)" onblur="formatRupiah(this);"></div></div>').appendTo(scntDiv);
+			$('<div class="row"><br><div class="col-md-12">	<label>Jenis Pengeluaran *</label><select required="" name="kredit_jenis_jenis_id[]" class="form-control select2" style="width: 100%;"><option selected="selected">Pilih Jenis Pengeluaran</option><?php foreach ($kredit_jenis as $j){ ?><option value="<?php echo $j['kredit_jenis_id'] ?>" ><?php echo $j['kredit_jenis_desc'] ?></option><?php } ?></select></div></br></br><div class="col-md-6"><label>Keterangan *</label><input type="text" required name="kredit_desc[]" class="form-control" placeholder="Keterangan Pengeluaran"><br><a href="#" class="btn btn-xs btn-danger remScnt_kredit"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Jumlah Rupiah *</label><input type="text" required name="kredit_value[]" class="form-control" placeholder="Jumlah" onfocus="unformatRupiah(this)" onblur="formatRupiah(this);"></div></div>').appendTo(scntDiv);
 			i++;
 
 			return false;

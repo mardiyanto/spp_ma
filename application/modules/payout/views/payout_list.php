@@ -15,6 +15,10 @@
 				<div class="box box-success">
 					<div class="box-header with-border">
 						<h3 class="box-title">Cari Transaksi Pembayaran</h3>
+						<a href="<?php echo site_url('manage/student') ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Siswa</a>
+						<a href="<?php echo site_url('manage/class') ?>" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> kelas</a>
+						<a href="<?php echo site_url('manage/majors') ?>" class="btn btn-sm btn-primary"><i class="fa fa-eye"></i> <?php echo $this->config->item('jrr') ?></a>
+								
 						<a href="<?php echo site_url('manage/student') ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-navicon"></i> Referensi Data <?php echo $this->config->item('siswa') ?></a>
 					</div><!-- /.box-header -->
 					<div class="box-body">
@@ -30,7 +34,14 @@
 						<div class="col-md-6">
 							<label for="" class="control-label">Input Berdasarkan NIM <?php echo $this->config->item('siswa') ?></label><br><br>
 							<div class="input-group">
-								<input type="text" class="form-control" autofocus name="r" <?php echo (isset($f['r'])) ? 'placeholder="' . $f['r'] . '"' : 'placeholder="Masukkan NIM "' ?> required>
+							    	<select class="form-control select2" style="width: 100%;" name="r">
+                                            <option selected="selected">Pilih Siswa</option>  
+										<?php $query = $this->db->get('student');
+										      foreach ($query->result() as $row): ?>
+											<option value="<?php echo $row->student_nis;?>"><?php echo $row->student_nis;?>-<?php echo $row->student_full_name;?></option>
+										<?php endforeach; ?>
+									</select>
+							
 								<span class="input-group-btn">
 									<button class="btn btn-success" type="submit"><i class="fa fa-search"></i> Cari Data</button>
 								</span>

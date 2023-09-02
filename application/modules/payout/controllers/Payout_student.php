@@ -86,4 +86,38 @@ class Payout_student extends CI_Controller {
     $data['main'] = 'payout/payout_student_list';
     $this->load->view('student/layout', $data);
   }
+  // Cetak rincian pembayaran total
+  function printBill()
+  {
+    $this->load->helper(array('dompdf'));
+    $f = $this->input->get(NULL, TRUE);
+
+    $data['f'] = $f;
+
+    $siswa['student_id'] = '';
+    $params = array();
+    $pay = array();
+
+    // Tahun Ajaran
+    if (isset($f['n']) && !empty($f['n']) && $f['n'] != '') {
+      $params['period_id'] = $f['n'];
+      $pay['period_id'] = $f['n'];
+    }
+
+    // Siswa
+    if (isset($f['r']) && !empty($f['r']) && $f['r'] != '') {
+      $params['student_nis'] = $f['r'];
+      $siswa = $this->Student_model->get(array('student_nis' => $f['r']));
+    }
+
+    $pay['student_id'] = $siswa['student_id'];
+    $data['period'] = $this->Period_model->get($params);
+    $data['siswa'] = $this->Student_model->get(array('student_id' => $siswa['student_id'], 'group' => TRUE));
+    $data['bulan'] = $this->Bulan_model->get($pay);
+    $data['bebas'] = $this->Bebas_model->get($pay);
+    $data['bulan_pay'] = $this->Bulan_pay_model->get($pay);
+    $data['setting_city'] = $this->Setting_model->get(array('id' => SCHOOL_CITY));
+    $html = $this->load->view('payout/payout_bill_pdf', $data, true);
+    $data = pdf_create($html, $siswa['student_full_name'], TRUE, 'A4', TRUE);
+  }
 }

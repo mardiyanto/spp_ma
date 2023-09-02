@@ -33,6 +33,7 @@
 
             <div class="col-sm-2">
               <button type="submit" class="btn btn-warning"><i class="fa fa-search"> </i> Cari Data</button>
+               
             </div>
           </div>
           </form>
@@ -41,7 +42,7 @@
       <?php if ($f) { ?>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="box box-info box-solid" style="border: 1px solid #2ABB9B !important;">
               <div class="box-header backg with-border">
                 <h3 class="box-title">IDENTITAS</h3>
@@ -98,17 +99,23 @@
                             '<td>' . $row['majors_name'] . '</td>' : '' ?>
                         <?php endforeach; ?>
                       </tr>
+                      <tr>
+                        <td>CETAK Tagihan</td>
+                        <td>:</td>
+                        <td><a href="<?php echo site_url('student/payout/printBill' . '/?' . http_build_query($f)) ?>" target="_blank" class="btn btn-warning"><i class="fa fa-file-pdf-o"> </i> Cetak Tagihan</a></td>
+                      </tr>
                     <?php } ?>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <!-- List Tagihan Bulanan -->
             <div class="box box-info box-solid" style="border: 1px solid #2ABB9B !important;">
               <div class="box-header backg with-border">
                 <h3 class="box-title">TAGIHAN BULANAN</h3>
+                 
               </div><!-- /.box-header -->
               <div class="box-body table-responsive">
                 <table class="table table-striped table-hover" style="cursor: pointer;">
@@ -144,6 +151,7 @@
                   <tbody id="demo" class="collapse">
                     <tr>
                       <th>No.</th>
+                      <th>tgl bayar</th>
                       <th>Bulan</th>
                       <th>Tahun</th>
                       <th>Tagihan</th>
@@ -157,6 +165,7 @@
                     ?>
                       <tr style="color:<?php echo ($row['bulan_bill']-$row['bulan_bill_total'] == 0) ? '#00E640' : 'red' ?>">
                         <td><?php echo $i; ?></td>
+                        <td><?php echo $row['bulan_date_pay'] ?></td>
                         <td><?php echo $row['month_name'] ?></td>
                         <td><?php echo $mont ?></td>
                         <td><?php echo 'Rp. ' . number_format($row['bulan_bill'], 0, ',', '.') ?></td>
@@ -181,6 +190,7 @@
                     <tr>
                       <th>No.</th>
                       <th>Jenis Pembayaran</th>
+                      <th>Tgl Pembayaran</th>
                       <th>Total Tagihan</th>
                       <th>Dibayar</th>
                       <th>Status</th>
@@ -196,7 +206,8 @@
                     ?>
                         <tr style="color:<?php echo ($row['bebas_bill'] == $row['bebas_total_pay']) ? '#00E640' : 'red' ?>">
                           <td><?php echo $i ?></td>
-                          <td><?php echo $namePay ?></td>
+                           <td><?php echo $namePay ?></td>
+                          <td>-</td>
                           <td><?php echo 'Rp. ' . number_format($sisa, 0, ',', '.') ?></td>
                           <td><?php echo 'Rp. ' . number_format($row['bebas_total_pay'], 0, ',', '.') ?></td>
                           <td><label class="label <?php echo ($row['bebas_bill'] == $row['bebas_total_pay']) ? 'label-success' : 'label-warning' ?>"><?php echo ($row['bebas_bill'] == $row['bebas_total_pay']) ? 'Lunas' : 'Belum Lunas' ?></label></td>
@@ -210,8 +221,10 @@
                 </table>
               </div>
             <?php } ?>
+            
             </div>
           </div>
+         
         </div>
 	</section>
 <!-- /.content -->
