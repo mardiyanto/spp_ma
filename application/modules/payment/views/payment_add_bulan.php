@@ -93,7 +93,7 @@ if (isset($bulan)) {
 										<input type="hidden" name="month_id[]" value="<?php echo $row['month_id']; ?>">
 										<tr>
 											<td><strong><?php echo $row['month_name']; ?></strong></td>
-											<td><input type="text" id="n<?php echo $row['month_id'] ?>" name="bulan_bill[]" class="form-control numeric" required="">
+											<td><input type="text" id="n<?php echo $row['month_id'] ?>" name="bulan_bill[]" class="form-control" required="">
 											</td>
 										</tr>
 									<?php endforeach; ?>
