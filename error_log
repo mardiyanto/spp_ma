@@ -1,0 +1,89 @@
+[25-Jul-2023 09:44:25 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 37
+[25-Jul-2023 09:48:49 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 37
+[24-Aug-2023 10:02:49 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:03:44 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:03:44 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:03:58 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:04:14 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:04:21 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:04:34 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:04:59 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '.' in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[24-Aug-2023 10:05:01 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '.' in /home/miua2886/public_html/application/modules/payout/views/payout_list.php on line 41
+[25-Aug-2023 09:06:00 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 09:15:24 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 17:10:33 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 17:38:37 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 17:40:45 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 20:20:34 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 20:23:30 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 20:23:40 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 20:24:04 Asia/Jakarta] PHP Fatal error:  Call to a member function get() on null in /home/miua2886/public_html/application/modules/kredit/controllers/Kredit_set.php on line 80
+[25-Aug-2023 20:36:37 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/kredit/views/kredit_list.php on line 137
+[25-Aug-2023 20:38:35 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/kredit/views/kredit_list.php on line 137
+[25-Aug-2023 20:38:45 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/miua2886/public_html/application/modules/kredit/views/kredit_list.php on line 137
+[26-Aug-2023 09:09:35 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/miua2886/public_html/application/modules/report/views/report_bill_list.php on line 96
+[30-Nov-2023 18:39:09 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[30-Nov-2023 18:39:09 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[30-Nov-2023 18:39:09 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[30-Nov-2023 18:39:09 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[30-Nov-2023 18:39:09 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[30-Nov-2023 18:39:34 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[30-Nov-2023 18:39:34 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[30-Nov-2023 18:39:34 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[30-Nov-2023 18:39:34 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[30-Nov-2023 18:39:34 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[03-Apr-2024 07:47:48 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[03-Apr-2024 07:47:48 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[03-Apr-2024 07:47:48 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[03-Apr-2024 07:47:48 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[03-Apr-2024 07:47:48 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[03-Apr-2024 07:47:56 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[03-Apr-2024 07:47:56 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[03-Apr-2024 07:47:56 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[03-Apr-2024 07:47:56 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[03-Apr-2024 07:47:56 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[06-Apr-2024 00:40:23 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[06-Apr-2024 00:40:23 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[06-Apr-2024 00:40:23 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[06-Apr-2024 00:40:23 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[06-Apr-2024 00:40:23 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[23-Apr-2024 04:30:13 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[23-Apr-2024 04:30:13 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[23-Apr-2024 04:30:13 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[23-Apr-2024 04:30:13 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[23-Apr-2024 04:30:13 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[23-Apr-2024 04:30:21 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[23-Apr-2024 04:30:21 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[23-Apr-2024 04:30:21 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[23-Apr-2024 04:30:21 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[23-Apr-2024 04:30:21 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[25-Apr-2024 05:52:26 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[25-Apr-2024 05:52:26 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[25-Apr-2024 05:52:26 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[25-Apr-2024 05:52:26 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[25-Apr-2024 05:52:26 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[07-May-2024 02:12:35 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[07-May-2024 02:12:35 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[07-May-2024 02:12:35 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[07-May-2024 02:12:35 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[07-May-2024 02:12:35 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[07-May-2024 02:12:38 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[07-May-2024 02:12:38 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[07-May-2024 02:12:38 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[07-May-2024 02:12:38 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[07-May-2024 02:12:38 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[09-May-2024 06:45:05 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[09-May-2024 06:45:05 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[09-May-2024 06:45:05 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[09-May-2024 06:45:05 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[09-May-2024 06:45:05 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[11-Jun-2024 13:12:25 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[11-Jun-2024 13:12:25 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[11-Jun-2024 13:12:25 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[11-Jun-2024 13:12:25 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[11-Jun-2024 13:12:25 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142
+[11-Jun-2024 13:12:29 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[11-Jun-2024 13:12:29 Asia/Jakarta] PHP Notice:  Undefined index: log_path in /home/miua2886/public_html/system/core/Log.php on line 127
+[11-Jun-2024 13:12:29 Asia/Jakarta] PHP Warning:  mkdir(): Invalid path in /home/miua2886/public_html/system/core/Log.php on line 131
+[11-Jun-2024 13:12:29 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 138
+[11-Jun-2024 13:12:29 Asia/Jakarta] PHP Notice:  Undefined index: log_threshold in /home/miua2886/public_html/system/core/Log.php on line 142

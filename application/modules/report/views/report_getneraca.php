@@ -37,7 +37,7 @@
 							<div class="col-md-4">
 								<button type="submit" class="btn btn-primary"><i class="fa fa-filter"></i> Filter Data</button>
 								<?php if ($q) { ?>
-									<a class="btn btn-success" href="<?php echo site_url('manage/report/neraca_get_pdf' . '/?' . http_build_query($q)) ?>" target="_blank"><i class="fa fa-file-pdf-o"></i> Cetak PDF</a>
+								<a class="btn btn-success" href="<?php echo site_url('manage/report/neraca_get_pdf' . '/?' . http_build_query($q)) ?>" target="_blank"><i class="fa fa-file-pdf-o"></i> Cetak PDF</a>
 								<?php } ?>
 							</div>
 						</div>
