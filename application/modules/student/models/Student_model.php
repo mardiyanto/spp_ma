@@ -34,7 +34,6 @@ class Student_model extends CI_Model
         if (isset($params['student_nis'])) {
             $this->db->where('student.student_nis', $params['student_nis']);
         }
-
         if (isset($params['nis'])) {
             $this->db->like('student_nis', $params['nis']);
         }
@@ -91,6 +90,7 @@ class Student_model extends CI_Model
         $this->db->select('majors_majors_id, majors.majors_name, majors_short_name');
         $this->db->join('class', 'class.class_id = student.class_class_id', 'left');
         $this->db->join('majors', 'majors.majors_id = student.majors_majors_id', 'left');
+        $this->db->where('student.student_status','1');
         $res = $this->db->get('student');
         if (isset($params['id'])) {
             return $res->row_array();
@@ -179,7 +179,7 @@ class Student_model extends CI_Model
         $this->db->select('majors.majors_id, majors.majors_name, majors_short_name');
         $this->db->join('class', 'class.class_id = student.class_class_id', 'left');
         $this->db->join('majors', 'majors.majors_id = student.majors_majors_id', 'left');
-       
+        $this->db->where('student.student_status','1');
         $res = $this->db->get('student');
         if (isset($params['id'])) {
             return $res->row_array();
