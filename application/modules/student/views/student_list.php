@@ -42,7 +42,8 @@
 					</div>
 					<!-- /.box-header -->
 					<div class="box-body table-responsive">
-						<table class="table table-hover table-striped table-bordered">
+					<table id="example1" class="table table-hover table-striped table-bordered">
+					<thead>
 							<tr class="bg-success">
 								<th><input type="checkbox" id="selectall" value="checkbox" name="checkbox"></th>
 								<th class="text-center">No</th>
@@ -53,7 +54,8 @@
 								<th class="text-center">Status</th>
 								<th class="text-center">Aksi</th>
 							</tr>
-							<tbody>
+							</thead>
+								<tbody>
 								<?php
 								$p = $this->db->query("SELECT * FROM period where period_status = 1")->row_array();
 								if (!empty($student)) {
@@ -83,6 +85,7 @@
 									endforeach;
 								} else {
 									?>
+										</tbody>
 									<tr id="row">
 										<td colspan="8" align="center">Data Kosong</td>
 									</tr>

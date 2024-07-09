@@ -20,7 +20,7 @@
 		</div>
 		<!-- /.box-header -->
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-12">
 				<div class="box box-success">
 					<div class="box-body">
 						<?php echo form_open(current_url(), array('method' => 'get')) ?>
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-12">
 				<div class="box box-primary">
 					<div class="box-body">
 						<button class="btn btn-success btn-block" type="submit" onclick="$('#lulus').submit()"><span class="glyphicon glyphicon glyphicon-chevron-right"></span> <b>Proses Lulus</b></button>
@@ -91,11 +91,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-12">
 				<div class="box box-danger">
 					<div class="box-body">
 						<h4>Data Kelulusan</h4>
-						<table class="table table-hover table-bordered table-responsive">
+						<table class="table table-hover table-striped table-bordered">
+					<thead>
 							<form action="<?php echo site_url('manage/student/multiple'); ?>" method="post" id="kembali">
 								<input type="hidden" name="action" value="notpass">
 								<tr>
@@ -103,8 +104,9 @@
 									<th>No</th>
 									<th>NIM</th>
 									<th>Nama</th>
+									<th>Kelas</th>
 									<th>Status Kelulusan</th>
-								</tr>
+								</tr></thead>
 								<tbody>
 									<?php
 									if (!empty($pass)) {
@@ -116,6 +118,7 @@
 												<td><?php echo $i; ?></td>
 												<td><?php echo $row['student_nis']; ?></td>
 												<td><?php echo $row['student_full_name']; ?></td>
+												<td><?php echo $row['class_name']; ?></td>
 												<td><label class="label label-success"><?php echo ($row['student_status'] == 0) ? 'Lulus' : 'Belum Lulus' ?></label></td>
 											</tr>
 										<?php

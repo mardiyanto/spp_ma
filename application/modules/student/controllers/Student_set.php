@@ -35,7 +35,8 @@ class Student_set extends CI_Controller
     $paramsPage = $params;
     $params['limit'] = 50;
     $params['offset'] = $offset;
-    $data['student'] = $this->Student_model->get($params);
+    $data['student'] = $this->Student_model->get(array('status' => 1));
+    // $data['student'] = $this->Student_model->get($params);
 
 
     $config['per_page'] = 50;
@@ -75,7 +76,7 @@ class Student_set extends CI_Controller
     $params['limit'] = 700;
     $params['offset'] = $offset;
     $data['student'] = $this->Student_model->getindex($params);
-
+    //$data['student'] = $this->Student_model->getindex(array('status' => 1));
 
     $config['per_page'] = 700;
     $config['uri_segment'] = 4;
